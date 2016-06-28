@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script type="text/javascript" src="js/js.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
     <title>Tic Tac Toe</title>
 </head>
-<body onload="startGame()">
-    <h1>Welcome to my game.</h1>
-    
-    <div id="message" class="messageBoard"></div>
-    <table border="1">
-      <tr>
-        <td id="s1" class="square" onclick="nextMove(this)"></td>
-        <td id="s2" class="square" onclick="nextMove(this)"></td>
-        <td id="s3" class="square" onclick="nextMove(this)"></td>
-      </tr>
-      <tr>
-        <td id="s4" class="square" onclick="nextMove(this)"></td>
-        <td id="s5" class="square" onclick="nextMove(this)"></td>
-        <td id="s6" class="square" onclick="nextMove(this)"></td>
-      </tr>
-      <tr>
-        <td id="s7" class="square" onclick="nextMove(this)"></td>
-        <td id="s8" class="square" onclick="nextMove(this)"></td>
-        <td id="s9" class="square" onclick="nextMove(this)"></td>
-      </tr>
-    </table>
-    <button class=(restartGame) onlcick="startGame()">Restart Game</button>
+<body onload="startGame();">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script> 
+    <script src="js/js.js" type="text/javascript">
+    </script>
+    <div class="container">
+    <h1>Welcome to my Tic-Tac-Toe game!</h1>
+        <div class="messageBoard" id="message"></div>
+        
+        <div id="message"></div>
+        
+        <table border="1">
+            <tr>
+                <td id="s1" class="Square" onclick="nextMove(this);"></td>
+                <td id="s2" class="Square" onclick="nextMove(this);"></td>
+                <td id="s3" class="Square" onclick="nextMove(this);"></td>
+            </tr>
+            <tr>
+                <td id="s4" class="Square" onclick="nextMove(this);"></td>
+                <td id="s5" class="Square" onclick="nextMove(this);"></td>
+                <td id="s6" class="Square" onclick="nextMove(this);"></td>
+            </tr>
+            <tr>
+                <td id="s7" class="Square" onclick="nextMove(this);"></td>
+                <td id="s8" class="Square" onclick="nextMove(this);"></td>
+                <td id="s9" class="Square" onclick="nextMove(this);"></td>
+            </tr>
+        </table>
+        <a href="javascript:startGame();">Start Over</a>
+        
+    </div>
 </body>
 </html>
+       
